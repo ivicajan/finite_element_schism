@@ -1,0 +1,6 @@
+function TheBound=GRID_GetBound(TheArr)
+
+[eta_rho, xi_rho]=size(TheArr);
+TheBound=[TheArr(1,1) TheArr(1, xi_rho) ...
+	  TheArr(eta_rho, xi_rho) TheArr(eta_rho,1) ...
+	  TheArr(1,1)];
